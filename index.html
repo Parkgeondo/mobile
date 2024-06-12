@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics</title>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/hand-pose-detection"></script>
+    <!-- Optional: Include below scripts if you want to use MediaPipe runtime. -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands"></script> 
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDBKDwjvAYhSYt5GyJw7F5VroAyylwrmQI",
+            authDomain: "bespoke-d57a0.firebaseapp.com",
+            projectId: "bespoke-d57a0",
+            storageBucket: "bespoke-d57a0.appspot.com",
+            messagingSenderId: "923960728638",
+            appId: "1:923960728638:web:00f602c81c6824b912056f"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+  <script type="module" crossorigin src="/assets/index-SN8Kizvi.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-kmu7yT6z.css">
+</head>
+<body>
+    <video id="video" autoplay></video>
+    <div class="text">
+        <h1>A collection of <br> lifestyles</h1>
+        <div class="QRcode">
+            <img src="/img/QRCode.png" alt="">
+            <h2>상단 QR코드를 스캔하여 <br> 당신의 라이프 스타일을 공유해주세요.</h2>
+        </div>
+    </div>
+    <canvas class="webgl"></canvas>
+
+</body>
+</html>
